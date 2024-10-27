@@ -1,0 +1,63 @@
+.articlecard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+  }
+  
+  .imagsection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .articleimage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 4px;
+  }
+  
+  .articledetails {
+    padding: 10px;
+  }
+  
+  .category {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .category.industrial {
+    background-color: #f9f1a6;
+    color: #333;
+  }
+  
+  .category.tools {
+    background-color: #f3a6f9;
+    color: #333;
+  }
+  
+  .category.automotive {
+    background-color: #f9c6a6;
+    color: #333;
+  }
+  
+  .category.electronics {
+    background-color: #a6d8f9;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  p {
+    color: #777;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,162 @@
+/* Center the entire app container and add spacing on left and right */
+.appcontainer {
+    max-width: 1200px; /* Set maximum width for the content area */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add padding around the container */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Section styling */
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .sectiontitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Trending section styling */
+  .trendingcontainer {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .trendingarticle {
+    width: 22%;
+    text-align: left;
+  }
+  
+  /* Main image styling */
+  .articleimage,
+  .articleimage2,
+  .articleimage1 {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .articleinfo {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .articletitle {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .smallarticletitle {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: left;
+  }
+  
+  /* Layout for flex section */
+  .flexsection {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .technologycontainer {
+    flex: 1;
+  }
+  
+  /* Main tech article with two images side by side */
+  .maintecharticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .maintecharticle img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid red;
+  }
+  
+  /* Styling for other tech articles in two-column layout */
+  .othertecharticles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .techarticle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .techarticle p {
+    text-align: left;
+  }
+  
+  .featurepost {
+    flex: 0.3;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .additionalImages {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    
+  }
+  
+  .smallImage {
+    width: 30%; 
+    border-radius: 8px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  
+  }
+  
+@media (max-width: 768px) {
+    /* For screens smaller than 768px */
+    .trendingarticle {
+        width: calc(50% - 15px); /* 2 articles in a row */
+    }
+
+    .flexsection {
+        flex-direction: column; /* Stack sections on top of each other */
+    }
+
+    .featurepost {
+        flex: 1; /* Full width on small screens */
+        margin-top: 20px; /* Add space above feature posts */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens */
+    .trendingarticle {
+        width: 100%; /* Stack all articles */
+    }
+
+    .sectiontitle {
+        font-size: 20px; /* Smaller titles for mobile */
+    }
+
+    .articletitle {
+        font-size: 14px; /* Smaller article titles */
+    }
+
+    .smallarticletitle {
+        font-size: 12px; /* Smaller small article titles */
+    }
+
+    .articleinfo {
+        font-size: 10px; /* Smaller info text */
+    }
+}

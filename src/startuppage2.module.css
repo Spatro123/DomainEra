@@ -1,0 +1,185 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafc;
+}
+
+/* Center the entire layout with space on left and right */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main content section */
+.maincontent {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.article {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.articleinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.articleinfo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.articleinfo p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.articlemeta {
+    display: flex;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.articlemeta span {
+    margin-right: 15px;
+}
+
+.sidebar {
+    flex: 1;
+    padding-left: 20px;
+    width: 250px;
+    margin-left: 20px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popular {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.popular h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: left;
+   
+}
+
+.popularitem {
+    display: grid;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.popularitem img {
+    width: 100%; 
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.categories {
+    margin-bottom: 20px;
+}
+
+.categories h3 {
+    margin-bottom: 10px;
+    text-align: left;
+   
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.categories li {
+    margin: 5px 0;
+}
+
+/* Ad Banner */
+.adbanner {
+    background-color: #d9ffcc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.adbanner h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+    text-align: left;
+}
+
+.adbanner p {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Follow Us Section */
+.followUs {
+    margin-top: 20px;
+}
+
+.followUs a {
+    margin-right: 10px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .maincontent {
+        margin-right: 0;
+    }
+
+    .sidebar {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,62 @@
+.authorscontainer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .authorsgrid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .authorcard {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 10px;
+    width: 230px;
+    text-align: center;
+    overflow: hidden; 
+    height: 270px; 
+  }
+  
+  .authorcardheader {
+    position: relative;
+    height: 50%;
+  }
+  
+  .authorcardheader span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 5px 10px;
+  }
+  
+  .authorimg {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -30px; /* Half out of the header, creating a floating effect */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid white;
+  }
+  
+  .authorcardbody {
+    padding: 50px 10px 20px;  /* Increase padding to make space for more content */
+  }
+  
+  .authorcardbody h3 {
+    margin: 15px 0 5px;  /* Increase margin for better spacing */
+    font-size: 1.1em;
+  }
+  
+  .authorcardbody p {
+    color: #555;
+    font-size: 0.9em;
+  }
+  

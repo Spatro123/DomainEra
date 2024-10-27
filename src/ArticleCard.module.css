@@ -1,0 +1,68 @@
+.articlecard {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  background-color: #fff; /* Ensures a white background */
+}
+
+.articlecategory {
+  position: absolute;
+  /* background-color: #ff6347; Optional: use a color that complements the design */
+  color: #fff;
+  padding: 5px 10px;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.articleimage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.articlecontent {
+  padding: 20px;
+}
+
+.articleauthor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px; /* Space between author section and title */
+}
+
+.authorimg {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.articlecontent h3 {
+  margin: 10px 0; /* Space between title and description */
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.articlecontent p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px; /* Space between description and stats */
+}
+
+.articlestats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+}

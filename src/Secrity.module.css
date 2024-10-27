@@ -1,0 +1,240 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the container horizontally */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+  }
+  
+  /* Main Content */
+  .mainContent {
+    flex: 3;
+    margin-right: 20px;
+  }
+  
+  .picked {
+    margin-bottom: 20px;
+  }
+  
+  .picked h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .pickedContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add spacing between items */
+  }
+  
+  .pickedItem {
+    width: 32%; /* Ensure items take up 32% of the width in large screens */
+  }
+  
+  .pickedItem img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .pickedItem p.category {
+    font-size: 12px;
+    color: orange;
+  }
+  
+  .pickedItem h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Videos Section */
+  .videos {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .videos h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .videoItem {
+    display: grid;
+    align-items: center;
+    position: relative;
+  }
+  
+  .videoThumbnail {
+    width: 100%; 
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+  }
+  .videopart{
+   
+  }
+  .youtubeIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .videoItem p {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .news {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .news h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .newsList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .newsItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .newsItem img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .newsItem h3 {
+    font-size: 12px;
+    margin: 0 0 5px;
+   
+  }
+  
+  .newsItem span {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  /* Styles for ICS/OT Security News Section */
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+  
+  .sidebarItem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .sidebarItem img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebarItem h3 {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  
+  .sidebarItem p {
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+    }
+  
+    .mainContent {
+      margin-right: 0; 
+    }
+  
+    .pickedContent {
+      flex-direction: column; 
+    }
+  
+    .pickedItem {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .videos {
+      flex-direction: column;
+    }
+  
+    .videoThumbnail {
+      width: 100%;
+    }
+  
+    .news {
+      margin-left: 0; 
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .picked h2, .videos h2, .news h2 {
+      font-size: 18px;
+    }
+  
+    .pickedItem h3, .newsItem h3 {
+      font-size: 14px;
+    }
+  
+    .videoItem p {
+      font-size: 14px;
+    }
+  
+    .newsItem img {
+      width: 80px; 
+      height: 80px;
+    }
+  }
+  

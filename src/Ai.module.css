@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .appcontainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .articlescontainer {
+    flex: 0 0 70%;
+  }
+  
+  .articlescontainer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .articlesgrid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainarticles {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mainarticles .article {
+    flex: 1 1 30%;
+    margin: 0 10px;
+  }
+  
+  .article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .articlecontent {
+    margin-top: 10px;
+  }
+  .articlecontent p{
+    text-align: left;
+  }
+  .category {
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #efefef;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  h3, h4 {
+    margin: 10px 0;
+    color: black;
+
+  }
+  
+  .secondaryarticles {
+    margin-top: 20px;
+  }
+  
+  .articlerow {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .articlerow img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    
+  }
+  
+  .sidebar {
+    flex: 0 0 25%;
+  }
+  
+  .popularposts ul, .browsecategory ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .popularposts ul li, .browsecategory ul li {
+    display: flex;
+    margin-bottom: 15px;
+    
+  }
+  .content p{
+text-align: left;
+  }
+  .popularposts img {
+    width: 60px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .popularposts .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .browsecategory ul li {
+    margin-bottom: 10px;
+    
+  }
+  
+  .browsecategory ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .appcontainer {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .articlescontainer {
+      flex: 1 1 100%;
+    }
+  
+    .sidebar {
+      margin-top: 30px;
+      flex: 1 1 100%;
+    }
+  
+    .mainarticles {
+      flex-direction: column;
+    }
+  
+    .mainarticles .article {
+      margin-bottom: 20px;
+    }
+  
+    .articlerow {
+      flex-direction: column;
+    }
+  
+    .articlerow img {
+      width: 100%;
+    }
+  
+    .popularposts ul li, .browsecategory ul li {
+      flex-direction: column;
+    }
+  
+    .popularposts img {
+      width: 100%;
+    }
+  }
+  
