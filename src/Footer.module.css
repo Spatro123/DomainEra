@@ -102,19 +102,49 @@ h3 {
     font-weight: bold;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .section {
         width: 100%;
-        text-align: center;
         margin: 20px 0;
+    }
+
+    .newsletterForm {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .emailInput, .submitButton {
+        width: 100%; /* Full width for inputs on mobile */
     }
 
     .socialIcons {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .emailInput, .submitButton {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .thankYouMessage {
+        font-size: 1rem;
     }
 }

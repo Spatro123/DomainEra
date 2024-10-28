@@ -7,8 +7,9 @@ import thumb1 from './p.jpg'; // Thumbnail for the first video
 import thumb2 from './p1.jpg'; // Thumbnail for the second video
 import youtubeIcon from './youtube (1).png';
 import Securitypage2 from "./securitypage2";
-import sidebarImg1 from './photo.png'; // Image for ICS/OT Sidebar item 1
+import sidebarImg1 from './photo.png';
 import sidebarImg2 from './photo1.png'; 
+import sidebarimg3 from './centr2.jpg';
 
 function App() {
   return (
@@ -63,7 +64,7 @@ function App() {
           </div>
           <div className={classes.videoItem}>
             <a href="https://youtu.be/Fg9hCKH1sYs?si=IVETik-cdlv2QM72" target="_blank" rel="noopener noreferrer">
-              <img src={thumb2} alt="Cyber Security Video 2" className={classes.videoThumbnail} />
+              <img src={sidebarimg3} alt="Cyber Security Video 2" className={classes.videoThumbnail} />
               <img src={youtubeIcon} alt="YouTube" className={classes.youtubeIcon} />
             </a>
             <p>In-Depth Cybersecurity Analysis</p>
@@ -71,7 +72,6 @@ function App() {
           </div>
         </div>
 
-        {/* Securitypage2 Component */}
         <Securitypage2 />
       </div>
      
@@ -131,7 +131,7 @@ function App() {
           <p>SecurityWeek’s 2024 ICS Cybersecurity Conference kicks off in Atlanta.</p>
         </div>
         <div className={classes.sidebarItem}>
-          <img src={sidebarImg1} alt="ICS/OT" />
+          <img src={sidebarImg2} alt="ICS/OT" />
           <h3>Critical Vulnerabilities Expose mbNET.mini, Helmholz Industrial Routers to Attacks</h3>
         </div>
         {/* <div className={classes.sidebarItem}>

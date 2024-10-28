@@ -2,71 +2,70 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-  }
-  
-  .container {
-    max-width: 1200px; /* Max width for the page */
-    margin: 0 auto; /* Center the container */
-    padding: 0 40px; /* Space on left and right */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-  }
-  
- 
-  .App {
+    align-items: center;
+}
+
+.App {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Centering the App */
-    padding: 0 20px; /* Add padding for internal spacing */
+    margin: 0 auto;
+    padding: 0 20px;
     text-align: center;
-  }
-  
-  /* Header section */
-  .header {
+}
+
+/* Header section */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px ;
+    padding: 40px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     border-radius: 10px;
     width: 100%;
-  }
-  
-  .headerleft {
+}
+
+.headerleft {
     flex: 1;
     text-align: left;
     padding-right: 20px;
-  }
-  
-  .headerleft h1 {
+}
+
+.headerleft h1 {
     font-size: 2.5rem;
     color: #3a3b6b;
     line-height: 1.2;
-  }
-  
-  .headerleft p {
+}
+
+.headerleft p {
     font-size: 1.1rem;
     color: #6c757d;
     margin: 20px 0;
-  }
-  
-  .features {
+}
+
+.features {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
-  }
-  
-  .features li {
+}
+
+.features li {
     font-size: 1.1rem;
     color: #5a5b7d;
     margin: 10px 0;
-  }
-  
-  .ctabtn {
+}
+
+.ctabtn {
     background-color: #58c9e6;
     color: #fff;
     border: none;
@@ -75,145 +74,147 @@ body {
     margin-top: 20px;
     cursor: pointer;
     font-size: 1.1rem;
-  }
-  
-  .ctabtn:hover {
+}
+
+.ctabtn:hover {
     background-color: #46b5d8;
-  }
-  
-  .headerright {
+}
+
+.headerright {
     flex: 1;
     display: flex;
     justify-content: center;
-  }
-  
-  .headerimage {
+}
+
+.headerimage {
     max-width: 100%;
     height: auto;
-  }
-  
-  /* Stats section */
-  .stats {
+}
+
+/* Stats section */
+.stats {
     display: flex;
     justify-content: space-around;
     padding: 40px;
     background-color: #f9f9fb;
     width: 100%;
-  }
-  
-  .stat {
+}
+
+.stat {
     text-align: center;
-  }
-  
-  .stat h2 {
+}
+
+.stat h2 {
     font-size: 2.5rem;
     color: #3a3b6b;
-  }
-  
-  .stat p {
+}
+
+.stat p {
     font-size: 1.2rem;
     color: #6c757d;
-  }
-  
-  .growth {
+}
+
+.growth {
     color: green;
-  }
-  
-  .decline {
+}
+
+.decline {
     color: red;
-  }
-  
-  /* Footer stats section */
-  .footerstats {
+}
+
+/* Footer stats section */
+.footerstats {
     display: flex;
     justify-content: space-around;
     padding: 40px;
     background-color: #e0e7ff;
     width: 100%;
-  }
-  
-  .footerstat {
+}
+
+.footerstat {
     font-size: 1.2rem;
     color: #3a3b6b;
-  }
-  
-  /* Responsive design for tablets and smaller devices */
-  @media screen and (max-width: 768px) {
+}
+
+/* Responsive design for tablets and smaller devices */
+@media screen and (max-width: 768px) {
     .container {
-      padding: 0 20px; /* Reduce padding for smaller screens */
+        padding: 0 20px;
     }
-  
+
     .header {
-      flex-direction: column;
-      padding: 20px 0;
+        flex-direction: column;
+        padding: 20px 0;
     }
-  
+
     .headerleft, .headerright {
-      text-align: center;
-      padding: 0;
+        text-align: center;
+        padding: 0;
     }
-  
+
     .features {
-      padding: 0;
-      margin: 0;
+        padding: 0;
+        margin: 0;
     }
-  
+
     .stats {
-      flex-direction: column;
-      padding: 20px;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px; /* Add spacing between stat items */
     }
-  
+
     .footerstats {
-      flex-direction: column;
-      padding: 20px;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px; /* Add spacing between footer stat items */
     }
-  
+
     .headerleft h1 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .headerleft p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
+
     .stat h2 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     .stat p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  }
-  
-  /* Responsive design for mobile devices */
-  @media screen and (max-width: 480px) {
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 480px) {
     .container {
-      padding: 0 10px; /* Even smaller padding for mobile screens */
+        padding: 0 10px;
     }
-  
+
     .headerleft h1 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .headerleft p {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  
+
     .ctabtn {
-      padding: 10px 20px;
-      font-size: 1rem;
+        padding: 10px 20px;
+        font-size: 1rem;
     }
-  
+
     .stats, .footerstats {
-      padding: 10px;
+        padding: 10px;
+        gap: 15px;
     }
-  
+
     .stat h2 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
+
     .stat p {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  }
-  
+}

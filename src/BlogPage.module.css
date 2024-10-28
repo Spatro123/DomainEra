@@ -9,6 +9,8 @@ body {
   padding: 20px;
   max-width: 1200px; 
   margin: 0 auto;
+  
+  
 }
 
 h2 {
@@ -55,7 +57,8 @@ p {
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  max-width: 300px; 
+  max-width: 600px; 
+ 
  
 }
 
@@ -70,6 +73,7 @@ p {
   height: auto;
   border-radius: 10px;
   max-height: 400px;
+ 
 }
 
 .textOverlay {
@@ -78,7 +82,7 @@ p {
   left: 0; 
   right: 0;
   background: rgba(201, 199, 199, 0.6); 
-  color: white; 
+  color: rgb(0, 0, 0); 
   padding: 10px;
   border-radius: 0 0 10px 10px; 
   text-align: left;
@@ -92,6 +96,7 @@ p {
 
 .textOverlay p {
   margin: 5px 0;
+  color: rgb(25, 24, 24);
 }
 
 
@@ -162,7 +167,13 @@ p {
 .latestnews {
   margin: 40px 0;
 }
-
+.latestnews p{
+ 
+  margin-bottom: 5px;
+}
+.latestnew {
+  
+}
 .newspost {
   margin-bottom: 20px;
 }
@@ -171,11 +182,16 @@ p {
   font-size: 18px;
   color: #333;
   text-align: left; 
+  
 }
-
+.newspost h4{
+ 
+  color: black;
+}
 .newspost p {
   color: #777;
   text-align: left; 
+
 }
 
 .featuredContainer {
@@ -195,6 +211,7 @@ p {
   padding: 15px; 
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
 }
 
 .centerColumn {
@@ -204,22 +221,32 @@ p {
 
 .rightSide {
   width: 300px;
+  color: #333; 
 }
 
 .featuredarticle {
   margin-bottom: 20px; 
   text-align: left; 
+  padding: 10px;
+
 }
+
 
 .featuredarticle h3 {
   font-size: 16px;
   color: #333;
 }
 
+.featuredArticle h4{
+
+  color: black;
+} 
+
 .featuredImage {
   width: 100%; 
   height: auto;
   border-radius: 10px;
+ 
 }
 
 .featuredImage1 {
@@ -227,6 +254,7 @@ p {
   max-width: 500px;
   height: auto;
   border-radius: 10px;
+ 
 }
 
 .rightArticle {
@@ -236,14 +264,41 @@ p {
   border: 1px solid lightgray;
   padding: 20px;
   border-radius: 4px;
+  color: grey;
+
+}
+
+.rightSide {
+  width: 300px;
+  color: #333; /* Ensure primary color is darker grey */
+  background-color: #f9f9f9; 
+}
+
+/* Ensure all text elements in .rightSide inherit or use a high-contrast color */
+.rightSide h3, .rightSide h4, .rightSide p, .rightSide span {
+  color: #333; /* Dark grey */
+  margin-top: 10px;
+}
+
+.rightArticle {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #ffffff; /* White background for contrast */
+  color: #333;
 }
 
 .rightImage {
-  width: 100px; 
-  height: 100px; 
+  /* width: 100px;
+  height: 100px; */
   border-radius: 50%;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
+
 
 .readMore {
   color: #fbfbfb; 
@@ -251,68 +306,20 @@ p {
   background-color: #ff6347; 
   padding: 10px;
   border-radius: 3px;
+  
+  
 }
-
+.text {
+  /* border: 1px solid red; */
+  margin-bottom: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: gray;
+}
 .morefeatured {
   margin-top: 40px;
 }
 
-/* Media Queries */
-@media (max-width: 1024px) {
-  .popularposts {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .featuredContainer {
-    flex-direction: column; 
-  }
-}
-
-@media (max-width: 768px) {
-  .popularposts {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .featuredContainer {
-    flex-direction: column; 
-  }
-
-  .leftSide, .centerColumn, .rightSide {
-    flex: 0 0 100%; 
-    margin-right: 0; 
-  }
-
-  .latestnews {
-    margin: 10px 0; 
-  }
-
-  .newspost {
-    padding: 8px; 
-  }
-
-  .rightImage {
-    width: 50px; 
-    height: 50px; 
-  }
-}
-
-@media (max-width: 480px) {
-  .popularposts {
-    grid-template-columns: 1fr;
-  }
-
-  .featuredpost, .popularpost {
-    padding: 10px;
-  }
-
-  .featuredimage, .popularpost img {
-    border-radius: 8px;
-  }
-
-  .blogcontainer {
-    padding: 10px;
-  }
-}
 
 .recentComments {
   margin: 20px 0;
@@ -344,4 +351,56 @@ p {
   font-size: 0.9em;
   color: #666;
   margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .featuredPostsContainer,
+  .featuredContainer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .popularposts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leftSide, .centerColumn, .rightSide {
+    width: 100%;
+    margin: 0;
+  }
+
+  .popularpost, .featuredpost {
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  h3, h4, p {
+    font-size: 12px;
+  }
+
+  .popularposts {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredimage, .popularpost img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .leftSide, .centerColumn, .rightSide {
+    margin: 0;
+  }
+
+  .readMore {
+    padding: 5px;
+    font-size: 12px;
+  }
 }

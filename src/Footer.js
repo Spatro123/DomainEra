@@ -13,7 +13,6 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
-      // Here, you can add functionality to send the email to the backend or newsletter service.
       setIsSubmitted(true);
     }
   };
@@ -21,7 +20,6 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.container}>
-        {/* Footer navigation links */}
         <div className={classes.section}>
           <ul className={classes.links}>
             <li><a href="/privacy-policy">Privacy Policy</a></li>
@@ -30,7 +28,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Links with Icons */}
         <div className={`${classes.section} ${classes.social}`}>
           <h3>Follow Us</h3>
           <ul className={classes.socialIcons}>
@@ -52,14 +49,12 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
         <div className={classes.section}>
           <h3>Contact Info</h3>
           <p>Email: <a href="mailto:info@domainera.net">info@domainera.net</a></p>
           <p>Address: Duplex 37, Sailashreevihar, Bhubaneswar, 751021</p>
         </div>
 
-        {/* Services Section */}
         <div className={classes.section}>
           <h3>Our Services</h3>
           <ul className={classes.services}>
@@ -71,7 +66,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Newsletter Subscription Section */}
         <div className={classes.section}>
           <h3>Subscribe to our Newsletter</h3>
           {!isSubmitted ? (

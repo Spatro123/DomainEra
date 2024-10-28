@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './BlogPage.module.css';
-import img1 from './img1.jpg';
+import img1 from './img5.jpg';
 import img2 from './img2.jpg';
 import img3 from './img3.jpg';
 import pic1 from './pic1.jpg';
@@ -72,18 +72,19 @@ const BlogPage = () => {
               <img src={leftimg} alt="Featured Article" className={classes.featuredImage} />
               <h4>More than half of businesses that closed during the pandemic won’t reopen</h4>
               <p>July 1, 2020 • Views: 8</p>
-              <p>About 60% of businesses that have closed during the coronavirus pandemic will never reopen, and restaurants have suffered the most, according to new data from Yelp.</p>
+              <div className={classes.text}>About 60% of businesses that have closed during the coronavirus pandemic will never reopen, and restaurants have suffered the most, according to new data from Yelp.</div>
               <a href="#" className={classes.readMore}>Read More→</a>
             </div>
-
+            
             <section className={classes.latestnews}>
               <h3>Latest News</h3>
-              <img src={leftimg} alt="Latest News" className={classes.featuredImage} />
+              <img src={img1} alt="Latest News" className={classes.featuredImage} />
               <article className={classes.newspost}>
                 <h4>In China, Heavy Industry Unexpectedly Falls Sharply</h4>
-                <p>August 15, 2019 • One Comment • Views: 4</p>
-                <p>At that I gripped my wife’s arm, and without ceremony ran her out into the road...</p>
+                <p>Aug 15, 2019 • One Comment • Views: 4</p>
+                <div className={classes.text}>At that I gripped my wife’s arm, and without ceremony ran her out into the road...</div>
               </article>
+              <a href="#" className={classes.readMore}>Read More→</a>
             </section>
           </div>
 

@@ -1,63 +1,103 @@
 .container {
-    position: relative;
-    width: 100% ;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centers the content horizontally */
-    padding: 20px;
-    background-color: rgba(180, 178, 178, 0.5); /* Optional dark background */
-  }
-  
-  .container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("./bg.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px); 
-    z-index: -1;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(180, 178, 178, 0.5); /* Optional dark background */
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2; /* Ensure content is above the background */
+  padding: 0 20px;
+}
+
+.text {
+  flex: 1;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 500px;
+  text-align: center;
+}
+
+.text span {
+  color: #4759ff;
+  font-size: 32px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image img {
+  width: 300px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .content {
-    position: relative;
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2; /* Ensure content is above the background */
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
-  
+
   .text {
-    flex: 1;
-    color: #fff;
-    font-size: 28px;
-    font-weight: bold;
-    max-width: 500px;
-    text-align: center; /* Center text */
-    z-index: 2;
+      font-size: 24px;
+      max-width: 100%;
+      margin-bottom: 20px;
   }
-  
+
   .text span {
-    color: #4759ff; 
-    font-size: 32px;
+      font-size: 28px;
   }
-  
-  .image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
+
   .image img {
-    width: 300px;
-    height: auto;
-    z-index: 2;
+      width: 250px;
   }
-  
+}
+
+@media (max-width: 400px) {
+  .container {
+      height: auto;
+      padding: 10px;
+  }
+
+  .text {
+      font-size: 20px;
+  }
+
+  .text span {
+      font-size: 24px;
+  }
+
+  .image img {
+      width: 200px;
+  }
+}

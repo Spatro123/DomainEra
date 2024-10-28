@@ -1,95 +1,157 @@
 .appcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .worldssection {
-    width: 80%;
-    margin: 20px 0;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.worldssection {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.articlescontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.articlecard {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.articlecard img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.articlecard h4 {
+  font-size: 1.2em;
+}
+
+.articlecard p {
+  color: gray;
+}
+
+.imagegridsection {
+  position: relative;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.imagegrid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagegrid img {
+  width: 18%;
+  border-radius: 8px;
+}
+
+.instagrambutton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.instagrambutton img {
+  width: 40px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 100%;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.footerlogo {
+  max-width: 300px;
+}
+
+.footer-sections div {
+  max-width: 200px;
+}
+
+.footer h1, .footer h3 {
+  font-weight: bold;
+}
+
+.footer p {
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .articlescontainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
   }
-  
+
   .articlecard {
-    width: 30%;
-    margin: 10px;
-    text-align: center;
+      width: 80%;
+      margin: 10px 0;
   }
-  
-  .articlecard img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .articlecard h4 {
-    font-size: 1.2em;
-  }
-  
-  .articlecard p {
-    color: gray;
-  }
-  
-  .imagegridsection {
-    position: relative;
-    width: 80%;
-    margin: 20px 0;
-  }
-  
+
   .imagegrid {
-    display: flex;
-    justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
   }
-  
+
   .imagegrid img {
-    width: 18%;
-    border-radius: 8px;
+      width: 45%;
+      margin-bottom: 10px;
   }
-  
-  .instagrambutton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .instagrambutton img {
-    width: 40px;
-  }
-  
-  .footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    width: 100%;
-  }
-  
+
   .footercontent {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
   }
-  
-  .footerlogo {
-    max-width: 300px;
-  }
-  
+
   .footer-sections div {
-    max-width: 200px;
+      max-width: 100%;
+      margin-bottom: 20px;
   }
-  
-  .footer h1, .footer h3 {
-    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .worldssection, .imagegridsection, .footercontent {
+      width: 100%;
+      padding: 0 10px;
   }
-  
-  .footer p {
-    color: gray;
+
+  .articlecard {
+      width: 90%;
   }
-  
+
+  .imagegrid img {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .instagrambutton img {
+      width: 30px;
+  }
+
+  .footerlogo {
+      max-width: 200px;
+  }
+
+  .footer p, .articlecard h4 {
+      font-size: 0.9em;
+  }
+}

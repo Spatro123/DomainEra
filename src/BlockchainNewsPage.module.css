@@ -144,6 +144,78 @@
   color: #333;
 }
 
+
+/* Responsive adjustments for screen width below 400px */
+@media (max-width: 400px) {
+  .header h1 {
+    font-size: 2rem; /* Decrease font size for header */
+  }
+
+  .header p {
+    font-size: 1rem; /* Decrease font size for header subtitle */
+  }
+
+  .contentWrapper {
+    gap: 20px; /* Reduce spacing between sections */
+  }
+
+  .content {
+    gap: 20px; /* Reduce gap for content */
+  }
+
+  .card {
+    max-width: 100%; /* Allow card to use full width */
+    padding: 20px; /* Reduce padding for smaller screens */
+    left: 0; /* Center card for narrow screens */
+  }
+
+  .tag {
+    top: 10px; /* Adjust position */
+    left: 10px;
+    font-size: 0.8rem; /* Decrease font size */
+  }
+
+  .card h2 {
+    font-size: 1rem; /* Decrease font size for card title */
+  }
+
+  .author {
+    gap: 5px; /* Reduce gap between author elements */
+    margin-bottom: 15px;
+  }
+
+  .authorImage {
+    width: 30px; /* Scale down author image */
+    height: 30px;
+  }
+
+  .authorDetails p {
+    font-size: 0.9rem; /* Reduce font size in author section */
+  }
+
+  .interactions {
+    gap: 5px; /* Adjust gap between interactions */
+  }
+
+  .imageContainer {
+    max-width: 100%; /* Use full width for image */
+  }
+
+  .mainImage {
+    border-radius: 10px; /* Slightly reduce border radius */
+  }
+
+  .pagination {
+    margin-top: 20px; /* Reduce top margin for pagination */
+  }
+
+  .paginationButton {
+    font-size: 1.2rem; /* Slightly reduce button size */
+    padding: 8px; /* Adjust padding */
+    margin: 0 5px;
+  }
+}
+
 /* Responsive adjustments */
 @media (min-width: 600px) {
   .content {

@@ -41,9 +41,9 @@ const App = () => {
             <img key={index} src={src} alt={`Grid ${index}`} />
           ))}
         </div>
-        <button className={classes.instagrambutton}>
+        {/* <button className={classes.instagrambutton}>
           <img src={instagram} alt="Instagram" />
-        </button>
+        </button> */}
       </div>
 
       {/* Footer Section */}
