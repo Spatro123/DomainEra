@@ -20,6 +20,7 @@ import NewsBlogPage from './NewsBlogPage';
 const BlogPage = () => {
   return (
     <div className={classes.blogcontainer}>
+   
       <section className={classes.featuredsection}>
         <h2>Featured</h2>
         <div className={classes.featuredPostsContainer}>
@@ -75,7 +76,7 @@ const BlogPage = () => {
               <div className={classes.text}>About 60% of businesses that have closed during the coronavirus pandemic will never reopen, and restaurants have suffered the most, according to new data from Yelp.</div>
               <a href="#" className={classes.readMore}>Read More→</a>
             </div>
-            
+
             <section className={classes.latestnews}>
               <h3>Latest News</h3>
               <img src={img1} alt="Latest News" className={classes.featuredImage} />
@@ -107,8 +108,7 @@ const BlogPage = () => {
             {[
               { img: rightimg1, text: "Small farmers could lose jobs, livelihoods amid tough competition from overseas" },
               { img: rightimg2, text: "Credit scores hit a record high. But US consumers are not OK" },
-              { img: rightimg3, text: "Why investors shouldn’t count on another big stimulus package" },
-              // { img: rightimg4, text: "The Unsinkable Daryline Johnson" }
+              { img: rightimg3, text: "Why investors shouldn’t count on another big stimulus package" }
             ].map((article, index) => (
               <div className={classes.rightArticle} key={index}>
                 <img src={article.img} alt="Right Side Article" />
@@ -119,24 +119,7 @@ const BlogPage = () => {
         </div>
       </section>
       <Poster />
-      {/* New Section: Recent Comments */}
-      {/* <section className={classes.recentComments}>
-        <h2>Recent Comments</h2>
-        <div className={classes.commentsContainer}>
-          {[
-            { name: "John Doe", comment: "This article was very informative! Thanks for sharing.", date: "October 20, 2024" },
-            { name: "Jane Smith", comment: "I completely agree with the points made here.", date: "October 19, 2024" },
-            { name: "Emily Johnson", comment: "Looking forward to more articles like this!", date: "October 18, 2024" }
-          ].map((comment, index) => (
-            <div className={classes.comment} key={index}>
-              <h4>{comment.name}</h4>
-              <p>{comment.comment}</p>
-              <p className={classes.commentDate}>{comment.date}</p>
-            </div>
-          ))}
-        </div>
-      </section> */}
-<NewsBlogPage />
+      <NewsBlogPage />
     </div>
   );
 };

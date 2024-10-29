@@ -1,4 +1,3 @@
-/* General Styling */
 .app {
   display: flex;
   gap: 20px;
@@ -8,6 +7,9 @@
 
 .main-content {
   width: 65%;
+}
+.articlecard h3 {
+color: gray;
 }
 
 .sidebar {
@@ -53,7 +55,7 @@
 }
 
 .tagsidebar, .trendingtopics, .authors {
-  background: #c8c9ca;
+  background: #fafafa;
   padding: 15px;
   border-radius: 8px;
   border: 1px solid lightgrey;

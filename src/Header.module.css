@@ -2,31 +2,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #d8d3d3;
-  padding: 15px 20px;
-  color: #2c2b2b;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #dfe4e9, #6973a7);
+  padding: 20px 25px;
+  color: #050288;
+  border-radius: 8px;
   max-width: 1200px;
   margin: 0 auto;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   position: relative;
+  transition: background 0.3s ease;
 }
+
+/* .header:hover {
+  background: linear-gradient(135deg, #969191, #a09c9c);
+} */
 
 .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logoImage {
-  width: 80px;
+  width: 160px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.logoImage:hover {
+  transform: rotate(10deg) scale(1.05);
 }
 
 /* Hamburger Menu Styling */
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
@@ -34,13 +46,13 @@
 }
 
 .bar, .barOpen {
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background-color: #333;
-  transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Rotate bars for "X" shape when open */
 .barOpen:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -69,26 +81,28 @@
 }
 
 .navmenu ul li {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .navmenu ul li a {
-  color: #040404;
+  color: #070c49;
   text-decoration: none;
-  padding: 8px 15px;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  scroll-behavior: smooth; 
 }
 
 .navmenu ul li a:hover {
-  background-color: #ede9e9;
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #6b7cff;
 }
 
 .activeLink {
-  background-color: #c9c5c5;
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
   font-weight: bold;
-  color: #1a1a1a;
+  color: #fff;
+  border-radius: 5px;
 }
 
 /* Responsive Styling for Sidebar Navigation */
@@ -100,29 +114,35 @@
   
   /* Sidebar navigation styling */
   .navmenu {
-    display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
-    background-color: #d8d3d3;
+    background: linear-gradient(135deg, #dfe4e9, #6973a7);
     padding: 20px;
-    transform: translateX(100%); /* Start off-screen */
-    transition: transform 0.3s ease; /* Smooth slide-in transition */
+    text-align: left;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
     z-index: 2;
   }
 
-  /* Display navigation when active */
   .navmenuOpen {
-    transform: translateX(0); /* Slide in from right */
+    transform: translateX(0);
   }
 
-  /* Vertical alignment for links in sidebar */
   .navmenu ul {
     flex-direction: column;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
   }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
 }

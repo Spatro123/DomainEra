@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import classes from './NewsBlogPage.module.css';
 
@@ -60,7 +59,6 @@ function App() {
       </div>
 
       <div className={classes.sidebar}>
-        {/* Tags */}
         <div className={classes.tagsidebar}>
           <h4>💡 More tags</h4>
           <div className={classes.tags}>
@@ -80,7 +78,6 @@ function App() {
           ))}
         </div>
 
-        {/* Authors */}
         <div className={classes.authors}>
           <h4>🧑 Discover Authors</h4>
           {authors.map((author) => (
