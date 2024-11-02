@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Disputes.module.css';
-import disputeImage1 from './photo.png';  // Placeholder image
-import disputeImage2 from './news2.jpg';  // Placeholder image
+import disputeImage1 from './photo.png'; 
+import disputeImage2 from './news2.jpg'; 
 import Worldscomponent from './WorldsComponent';
 
 const Disputes = () => {
@@ -9,12 +9,11 @@ const Disputes = () => {
     <div className={classes.disputePage}>
       <h1>Domain Disputes</h1>
       
-      {/* Main Content Section */}
       <section className={classes.content}>
-        <p>
+        {/* <p>
           Domain disputes arise when multiple parties claim ownership or rights over a particular domain name.
           This can involve trademark issues, ownership disputes, or cases of cybersquatting.
-        </p>
+        </p> */}
         <div className={classes.images}>
           <img src={disputeImage1} alt="Dispute Image 1" />
           <img src={disputeImage2} alt="Dispute Image 2" />
@@ -26,7 +25,6 @@ const Disputes = () => {
         </p>
       </section>
 
-      {/* News Section */}
       <section className={classes.newsSection}>
         <div className={classes.newsItem}>
           <div className={classes.date}>AUG 10</div>

@@ -7,10 +7,10 @@ import img2 from './p2.jpg';
 import img3 from './p3.jpg';
 
 const authors = [
-  { id: 1, name: 'Truelock Alric', job: 'Author Job', score: 40 },
-  { id: 2, name: 'Birrell Chariot', job: 'Author Job', score: 113 },
-  { id: 3, name: 'Foulcher Nathanil', job: 'Author Job', score: 43 },
-  { id: 4, name: 'Falconar Agnes', job: 'Author Job', score: 36 },
+  { id: 1, name: 'Truelock Alric', job: 'Author Job', score: 40, profileLink: 'https://example.com/author/truelock-alric' },
+  { id: 2, name: 'Birrell Chariot', job: 'Author Job', score: 113, profileLink: 'https://example.com/author/birrell-chariot' },
+  { id: 3, name: 'Foulcher Nathanil', job: 'Author Job', score: 43, profileLink: 'https://example.com/author/foulcher-nathanil' },
+  { id: 4, name: 'Falconar Agnes', job: 'Author Job', score: 36, profileLink: 'https://example.com/author/falconar-agnes' },
 ];
 
 const backgroundImages = [img, img1, img2, img3];
@@ -22,7 +22,7 @@ const Authors = () => {
       <p>Say hello to future creator potentials</p>
       <div className={classes.authorsgrid}>
         {authors.map((authorData, index) => (
-          <div className={classes.authorcard} key={authorData.id}>
+          <a href={authorData.profileLink} target="_blank" rel="noopener noreferrer" key={authorData.id} className={classes.authorcard}>
             <div
               className={classes.authorcardheader}
               style={{
@@ -41,7 +41,7 @@ const Authors = () => {
               <h3>{authorData.name}</h3>
               <p>@{authorData.job}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

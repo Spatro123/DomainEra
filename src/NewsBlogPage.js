@@ -9,6 +9,7 @@ function App() {
       category: "Electronics",
       author: "Pillifant Vern",
       date: "May 20, 2021",
+      link: "https://blockchaintechnology-news.com/" 
     },
     {
       title: "360-degree video: How Microsoft deployed a datacenter to the bottom of the ocean",
@@ -16,6 +17,7 @@ function App() {
       category: "Electronics",
       author: "Pillifant Vern",
       date: "May 20, 2021",
+      link: "https://appinventiv.com/blog/ai-in-blockchain/"
     },
     {
       title: "To cool datacenter servers, Microsoft turns to boiling liquid",
@@ -23,6 +25,7 @@ function App() {
       category: "Industrial",
       author: "Fouchier Nathanil",
       date: "May 20, 2021",
+      link: "https://www.deeprec.ai/blog?source=google.com"
     },
   ];
 
@@ -45,7 +48,9 @@ function App() {
         {articles.map((article, index) => (
           <div key={index} className={classes.articlecard}>
             <span className={`category ${article.category.toLowerCase()}`}>{article.category}</span>
-            <h3>{article.title}</h3>
+            <a href={article.link} target="_blank" rel="noopener noreferrer">
+              <h3>{article.title}</h3>
+            </a>
             <p>{article.description}</p>
             <div className={classes.articlefooter}>
               <span>{article.author} • {article.date}</span>

@@ -19,7 +19,11 @@ function App() {
               <img src={img1} alt="Article 1" />
               <div className={classes.articlecontent}>
                 <span className={classes.category}>Technology</span>
-                <h3>This camera trades pictures for AI poetry</h3>
+                <h3>
+                  <a href="https://www.uipath.com/blog/ai/overcome-ai-adoption-barriers" target="_blank" rel="noopener noreferrer">
+                    This camera trades pictures for AI poetry
+                  </a>
+                </h3>
                 <p>BY Elon Mask <span>1.9k views</span></p>
               </div>
             </div>
@@ -27,7 +31,11 @@ function App() {
               <img src={img2} alt="Article 2" />
               <div className={classes.articlecontent}>
                 <span className={classes.category}>Technology</span>
-                <h3>Earbuds DevOps tools should be learning in 2024</h3>
+                <h3>
+                  <a href="https://www.uipath.com/blog/ai/agentic-automation-not-just-thinking-its-doing" target="_blank" rel="noopener noreferrer">
+                    Earbuds DevOps tools should be learning in 2024
+                  </a>
+                </h3>
                 <p>BY Elon Mask <span>1.9k views</span></p>
               </div>
             </div>
@@ -35,19 +43,26 @@ function App() {
               <img src={img3} alt="Article 3" />
               <div className={classes.articlecontent}>
                 <span className={classes.category}>Technology</span>
-                <h3>Efficient Rules How to Working Place Relationship</h3>
+                <h3>
+                  <a href="https://www.artificialintelligence-news.com/news/industry-leaders-back-open-source-ai-definition/" target="_blank" rel="noopener noreferrer">
+                    Efficient Rules How to Working Place Relationship
+                  </a>
+                </h3>
                 <p>BY Elon Mask <span>1.9k views</span></p>
               </div>
             </div>
           </div>
 
-          {/* Secondary Articles */}
           <div className={classes.secondaryarticles}>
             <div className={classes.articlerow}>
               <img src={img1} alt="Article 4" />
               <div className={classes.articlecontent}>
                 <span className={classes.category}>Technology</span>
-                <h4>Internal Knowledge Base – A Quick Guide by Bital</h4>
+                <h4>
+                  <a href="https://www.uipath.com/blog/ai/overcome-ai-adoption-barriers" target="_blank" rel="noopener noreferrer">
+                    Internal Knowledge Base – A Quick Guide by Bital
+                  </a>
+                </h4>
                 <p><span>1.9k views</span></p>
               </div>
             </div>
@@ -55,7 +70,11 @@ function App() {
               <img src={img2} alt="Article 5" />
               <div className={classes.articlecontent}>
                 <span className={classes.category}>Technology</span>
-                <h4>How Can A Wellness Retreat Help Reconnect You to Yourself</h4>
+                <h4>
+                  <a href="https://www.uipath.com/blog/ai/agentic-automation-not-just-thinking-its-doing" target="_blank" rel="noopener noreferrer">
+                    How Can A Wellness Retreat Help Reconnect You to Yourself
+                  </a>
+                </h4>
                 <p><span>1.9k views</span></p>
               </div>
             </div>
@@ -63,7 +82,11 @@ function App() {
               <img src={img3} alt="Article 6" />
               <div className={classes.articlecontent}>
                 <span className={classes.category}>Technology</span>
-                <h4>How to Create Wikis for Employee Onboarding & Training?</h4>
+                <h4>
+                  <a href="https://www.artificialintelligence-news.com/news/industry-leaders-back-open-source-ai-definition/" target="_blank" rel="noopener noreferrer">
+                    How to Create Wikis for Employee Onboarding & Training?
+                  </a>
+                </h4>
                 <p><span>1.9k views</span></p>
               </div>
             </div>
@@ -71,7 +94,6 @@ function App() {
         </div>
       </div>
 
-      {/* Sidebar Section */}
       <div className={classes.sidebar}>
         <div className={classes.popularposts}>
           <h3>Popular Post</h3>

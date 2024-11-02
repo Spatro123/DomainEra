@@ -2,10 +2,11 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 100px;
   font-family: Arial, sans-serif;
 }
 
-/* Section styling */
+
 .section {
   margin-bottom: 20px;
 }
@@ -16,11 +17,11 @@
   text-align: left;
 }
 
-/* Trending section styling */
+
 .trendingcontainer {
   display: flex;
   gap: 15px;
-  flex-wrap: wrap; /* Allow wrapping for responsive layouts */
+  flex-wrap: wrap; 
 }
 
 .trendingarticle {
@@ -54,7 +55,6 @@
   text-align: left;
 }
 
-/* Layout for flex section */
 .flexsection {
   display: flex;
   gap: 20px;
@@ -64,7 +64,7 @@
   flex: 1;
 }
 
-/* Main tech article with two images side by side */
+
 .maintecharticle {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,10 +78,9 @@
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  border: 1px solid red;
+ 
 }
 
-/* Styling for other tech articles in two-column layout */
 .othertecharticles {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,8 +117,27 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+a {
+  text-decoration: none; 
+  color: inherit;
+  transition: transform 0.2s ease, color 0.2s ease; 
+}
 
-/* Responsive Design */
+
+a:hover {
+  transform: scale(1.05); 
+
+}
+
+
+.articletitle, .smallarticletitle {
+  transition: transform 0.2s ease; 
+}
+
+.articletitle:hover, .smallarticletitle:hover {
+  transform: scale(1.05); 
+}
+
 @media (max-width: 768px) {
   .trendingcontainer {
       flex-wrap: wrap;
@@ -127,19 +145,18 @@
   }
 
   .trendingarticle {
-      width: calc(50% - 15px); /* 2 articles in a row */
+      width: calc(50% - 15px);
   }
 
   .flexsection {
-      flex-direction: column; /* Stack sections vertically */
+      flex-direction: column;
   }
-
   .maintecharticle {
-      grid-template-columns: 1fr; /* Single column for main tech articles */
+      grid-template-columns: 1fr;
   }
 
   .othertecharticles {
-      grid-template-columns: 1fr; /* Stack tech articles in a single column */
+      grid-template-columns: 1fr;
   }
 
   .featurepost {
@@ -153,7 +170,7 @@
   }
 
   .smallImage {
-      width: 80%; /* Adjust image size on small screens */
+      width: 80%; 
   }
 }
 
@@ -163,7 +180,7 @@
   }
 
   .trendingarticle {
-      width: 100%; /* Stack trending articles */
+      width: 100%; 
   }
 
   .articletitle {
@@ -184,7 +201,7 @@
   }
 
   .maintecharticle, .othertecharticles {
-      grid-template-columns: 1fr; /* Stack all articles in a single column */
+      grid-template-columns: 1fr; 
   }
 
   .additionalImages {

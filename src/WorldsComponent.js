@@ -46,7 +46,7 @@ const App = () => {
         </button> */}
       </div>
 
-      {/* Footer Section */}
+   
       <footer className={classes.footer}>
         <div className={classes.footercontent}>
           <div className={classes.footerlogo}>
@@ -55,15 +55,15 @@ const App = () => {
               I want to learn more about the greenhouse effect on Venus, 
               about whether there was life on Mars.
             </p>
-            <p>📞 +34 000 0000</p>
-            <p>📧 example@mail.me</p>
+            {/* <p>📞 +34 000 0000</p>
+            <p>📧 example@mail.me</p> */}
           </div>
           <div className={classes.footersections}>
-            <div>
+            {/* <div>
               <h3>Gadget</h3>
               <p>Hot New Releases in Audio Headphones</p>
               <p>Mobile Camera Makes a Huge Leap in Quality</p>
-            </div>
+            </div> */}
             <div>
               <h3>World News</h3>
               <p>Essential Tech Tips for Your Business</p>

@@ -46,7 +46,6 @@ function App() {
         {/* Videos Section */}
         <h2>Cybersecurity Videos</h2>
         <div className={classes.videos}>
-        
           <div className={classes.videoItem}>
             <a href="https://youtu.be/qVET1vD3NtQ?si=EwmYJodEVqjhVU1f" target="_blank" rel="noopener noreferrer">
               <img src={thumb1} alt="Cyber Security Video 1" className={classes.videoThumbnail} />
@@ -55,27 +54,26 @@ function App() {
             <p>Latest Cybersecurity News and Insights</p>
           </div>
           <div className={classes.videopart}>
-          <div className={classes.videoItem}>
-            <a href="https://youtu.be/Fg9hCKH1sYs?si=IVETik-cdlv2QM72" target="_blank" rel="noopener noreferrer">
-              <img src={thumb2} alt="Cyber Security Video 2" className={classes.videoThumbnail} />
-              <img src={youtubeIcon} alt="YouTube" className={classes.youtubeIcon} />
-            </a>
-            <p>In-Depth Cybersecurity Analysis</p>
-          </div>
-          <div className={classes.videoItem}>
-            <a href="https://youtu.be/Fg9hCKH1sYs?si=IVETik-cdlv2QM72" target="_blank" rel="noopener noreferrer">
-              <img src={sidebarimg3} alt="Cyber Security Video 2" className={classes.videoThumbnail} />
-              <img src={youtubeIcon} alt="YouTube" className={classes.youtubeIcon} />
-            </a>
-            <p>In-Depth Cybersecurity Analysis</p>
-          </div>
+            <div className={classes.videoItem}>
+              <a href="https://youtu.be/Fg9hCKH1sYs?si=IVETik-cdlv2QM72" target="_blank" rel="noopener noreferrer">
+                <img src={thumb2} alt="Cyber Security Video 2" className={classes.videoThumbnail} />
+                <img src={youtubeIcon} alt="YouTube" className={classes.youtubeIcon} />
+              </a>
+              <p>In-Depth Cybersecurity Analysis</p>
+            </div>
+            <div className={classes.videoItem}>
+              <a href="https://youtu.be/Fg9hCKH1sYs?si=IVETik-cdlv2QM72" target="_blank" rel="noopener noreferrer">
+                <img src={sidebarimg3} alt="Cyber Security Video 2" className={classes.videoThumbnail} />
+                <img src={youtubeIcon} alt="YouTube" className={classes.youtubeIcon} />
+              </a>
+              <p>In-Depth Cybersecurity Analysis</p>
+            </div>
           </div>
         </div>
 
         <Securitypage2 />
       </div>
      
-
       <div className={classes.news}>
         <h2>News</h2>
         <ul className={classes.newsList}>
@@ -122,25 +120,32 @@ function App() {
             </div>
           </li>
         </ul>
-        <div className={classes.sidebar}>
-        <h2>ICS/OT Security News</h2>
 
-        <div className={classes.sidebarItem}>
-          <img src={sidebarImg1} alt="ICS/OT" />
-          <h3>Live From Atlanta</h3>
-          <p>SecurityWeek’s 2024 ICS Cybersecurity Conference kicks off in Atlanta.</p>
+        <div className={classes.sidebar}>
+          <h2>ICS/OT Security News</h2>
+
+          <div className={classes.sidebarItem}>
+            <img src={sidebarImg1} alt="ICS/OT" />
+            <h3>Live From Atlanta</h3>
+            <p>SecurityWeek’s 2024 ICS Cybersecurity Conference kicks off in Atlanta.</p>
+          </div>
+          <div className={classes.sidebarItem}>
+            <img src={sidebarImg2} alt="ICS/OT" />
+            <h3>Critical Vulnerabilities Expose mbNET.mini, Helmholz Industrial Routers to Attacks</h3>
+          </div>
+          {/* <div className={classes.sidebarItem}>
+            <img src={sidebarImg2} alt="Palo Alto Networks" />
+            <h3>Palo Alto Networks Adds New Capabilities to OT Security Solution</h3>
+          </div> */}
         </div>
-        <div className={classes.sidebarItem}>
-          <img src={sidebarImg2} alt="ICS/OT" />
-          <h3>Critical Vulnerabilities Expose mbNET.mini, Helmholz Industrial Routers to Attacks</h3>
-        </div>
-        {/* <div className={classes.sidebarItem}>
-          <img src={sidebarImg2} alt="Palo Alto Networks" />
-          <h3>Palo Alto Networks Adds New Capabilities to OT Security Solution</h3>
-        </div> */}
+
+        <h2>Tech Security Articles</h2>
+        <ul className={classes.techArticles}>
+          <li><a href="https://ciso.economictimes.indiatimes.com/news/cybercrime-fraud/india-could-attract-nearly-1-trillion-cyberattacks-annually-by-2033-report/114807348?utm_source=top_story&utm_medium=latestNews" target="_blank" rel="noopener noreferrer">India Could Attract Nearly $1 Trillion Cyberattacks Annually by 2033: Report</a></li>
+          <li><a href="https://ciso.economictimes.indiatimes.com/news/research/india-needs-stronger-security-measures-to-tackle-cyber-attacks-experts/114763144?utm_source=top_story&utm_medium=latestNews" target="_blank" rel="noopener noreferrer">India Needs Stronger Security Measures to Tackle Cyber Attacks: Experts</a></li>
+          <li><a href="https://ciso.economictimes.indiatimes.com/news/research/india-needs-stronger-security-measures-to-tackle-cyber-attacks-experts/114763144?utm_source=most_read&utm_medium=latestNews" target="_blank" rel="noopener noreferrer">India Needs Stronger Security Measures to Tackle Cyber Attacks: Experts (Most Read)</a></li>
+        </ul>
       </div>
-      </div>
-      
     </div>
   );
 }

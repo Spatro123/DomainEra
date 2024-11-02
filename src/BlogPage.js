@@ -25,12 +25,12 @@ const BlogPage = () => {
         <h2>Featured</h2>
         <div className={classes.featuredPostsContainer}>
           {[
-            { img: img1, title: "Politics", date: "July 1, 2020", views: 7, desc: "More than half of businesses that closed during the pandemic won’t reopen" },
-            { img: img2, title: "Technology", date: "July 5, 2020", views: 12, desc: "New AI technologies reshaping industries" },
-            { img: img3, title: "Environment", date: "July 10, 2020", views: 15, desc: "The impact of climate change on global agriculture" }
+            { img: img1, title: "Politics", date: "July 1, 2020", views: 7, desc: "More than half of businesses that closed during the pandemic won’t reopen", link: "https://www.deeprec.ai/blog?source=google.com" },
+            { img: img2, title: "Technology", date: "July 5, 2020", views: 12, desc: "New AI technologies reshaping industries", link: "https://www.deeprec.ai/blog/2024/07/genais-rise-in-europe-growth-funding-and-challenges?source=google.com" },
+            { img: img3, title: "Environment", date: "July 10, 2020", views: 15, desc: "The impact of climate change on global agriculture", link: "https://blockchaintechnology-news.com/" }
           ].map((post, index) => (
             <div className={classes.featuredpost} key={index}>
-              <a href={`/${post.title.toLowerCase()}`} className={classes.imageContainer}>
+              <a href={post.link} target="_blank" rel="noopener noreferrer" className={classes.imageContainer}>
                 <img src={post.img} alt={post.title} className={classes.featuredimage} />
                 <div className={classes.textOverlay}>
                   <h3>{post.title}</h3>
@@ -47,18 +47,20 @@ const BlogPage = () => {
         <h2>Popular this week</h2>
         <div className={classes.popularposts}>
           {[
-            { img: pic1, title: "The Smart Business Recovery", date: "September 12, 2018" },
-            { img: pic2, title: "Why the US economy won’t gain any traction until 2024", date: "August 17, 2013" },
-            { img: pic3, title: "Smart sensors could track social distancing in the office", date: "November 3, 2019" },
-            { img: pic4, title: "All 30 million British homes could be powered by...", date: "November 3, 2016" }
+            { img: pic1, title: "The Smart Business Recovery", date: "September 12, 2018", link: "https://blockchaintechnology-news.com/news/mint-blockchain-earns-grant-to-drive-nft-ecosystem-growth/" },
+            { img: pic2, title: "Why the US economy won’t gain any traction until 2024", date: "August 17, 2013", link: "https://www.deeprec.ai/blog?source=google.com" },
+            { img: pic3, title: "Smart sensors could track social distancing in the office", date: "November 3, 2019", link: "https://www.deeprec.ai/blog/2024/07/genais-rise-in-europe-growth-funding-and-challenges?source=google.com" },
+            { img: pic4, title: "All 30 million British homes could be powered by...", date: "November 3, 2016", link: "https://blockchaintechnology-news.com/" }
           ].map((post, index) => (
             <div className={classes.popularpost} key={index}>
-              <div className={classes.overlay}>{index + 1}</div>
-              <img src={post.img} alt={post.title} />
-              <div className={classes.text}>
-                <p>{post.title}</p>
-                <p>{post.date}</p>
-              </div>
+              <a href={post.link} target="_blank" rel="noopener noreferrer">
+                <div className={classes.overlay}>{index + 1}</div>
+                <img src={post.img} alt={post.title} />
+                <div className={classes.text}>
+                  <p>{post.title}</p>
+                  <p>{post.date}</p>
+                </div>
+              </a>
             </div>
           ))}
         </div>
@@ -74,31 +76,35 @@ const BlogPage = () => {
               <h4>More than half of businesses that closed during the pandemic won’t reopen</h4>
               <p>July 1, 2020 • Views: 8</p>
               <div className={classes.text}>About 60% of businesses that have closed during the coronavirus pandemic will never reopen, and restaurants have suffered the most, according to new data from Yelp.</div>
-              <a href="#" className={classes.readMore}>Read More→</a>
+              <a href="https://www.deeprec.ai/blog?source=google.com" target="_blank" rel="noopener noreferrer" className={classes.readMore}>Read More→</a>
             </div>
 
             <section className={classes.latestnews}>
               <h3>Latest News</h3>
-              <img src={img1} alt="Latest News" className={classes.featuredImage} />
+              <a href="https://www.deeprec.ai/blog/2024/07/genais-rise-in-europe-growth-funding-and-challenges?source=google.com" target="_blank" rel="noopener noreferrer">
+                <img src={img1} alt="Latest News" className={classes.featuredImage} />
+              </a>
               <article className={classes.newspost}>
                 <h4>In China, Heavy Industry Unexpectedly Falls Sharply</h4>
                 <p>Aug 15, 2019 • One Comment • Views: 4</p>
                 <div className={classes.text}>At that I gripped my wife’s arm, and without ceremony ran her out into the road...</div>
               </article>
-              <a href="#" className={classes.readMore}>Read More→</a>
+              <a href="https://blockchaintechnology-news.com/news/mint-blockchain-earns-grant-to-drive-nft-ecosystem-growth/" target="_blank" rel="noopener noreferrer" className={classes.readMore}>Read More→</a>
             </section>
           </div>
 
           <div className={classes.centerColumn}>
             {[
-              { title: "All 30 million British homes could be powered by wind in 2030", img: img1, date: "November 3, 2016" },
-              { title: "These farmers say their cows can solve the climate crisis", img: centreimg, date: "July 25, 2018" }
+              { title: "All 30 million British homes could be powered by wind in 2030", img: img1, date: "November 3, 2016", link: "https://blockchaintechnology-news.com/" },
+              { title: "These farmers say their cows can solve the climate crisis", img: centreimg, date: "July 25, 2018", link: "https://www.deeprec.ai/blog?source=google.com" }
             ].map((article, index) => (
               <article className={classes.featuredarticle} key={index}>
-                <h3>{article.title}</h3>
-                <img src={article.img} alt={article.title} className={classes.featuredImage1} />
+                <a href={article.link} target="_blank" rel="noopener noreferrer">
+                  <h3>{article.title}</h3>
+                  <img src={article.img} alt={article.title} className={classes.featuredImage1} />
+                </a>
                 <p>{article.date} • Views: 5</p>
-                <a href="#" className={classes.readMore}>Read More→</a>
+                <a href={article.link} target="_blank" rel="noopener noreferrer" className={classes.readMore}>Read More→</a>
               </article>
             ))}
           </div>
@@ -106,13 +112,15 @@ const BlogPage = () => {
           <div className={classes.rightSide}>
             <h3>Inside Politics</h3>
             {[
-              { img: rightimg1, text: "Small farmers could lose jobs, livelihoods amid tough competition from overseas" },
-              { img: rightimg2, text: "Credit scores hit a record high. But US consumers are not OK" },
-              { img: rightimg3, text: "Why investors shouldn’t count on another big stimulus package" }
+              { img: rightimg1, text: "Small farmers could lose jobs, livelihoods amid tough competition from overseas", link: "https://blockchaintechnology-news.com/" },
+              { img: rightimg2, text: "Credit scores hit a record high. But US consumers are not OK", link: "https://www.deeprec.ai/blog/2024/07/genais-rise-in-europe-growth-funding-and-challenges?source=google.com" },
+              { img: rightimg3, text: "Why investors shouldn’t count on another big stimulus package", link: "https://blockchaintechnology-news.com/news/mint-blockchain-earns-grant-to-drive-nft-ecosystem-growth/" }
             ].map((article, index) => (
               <div className={classes.rightArticle} key={index}>
-                <img src={article.img} alt="Right Side Article" />
-                <p>{article.text}</p>
+                <a href={article.link} target="_blank" rel="noopener noreferrer">
+                  <img src={article.img} alt="Right Side Article" />
+                  <p>{article.text}</p>
+                </a>
               </div>
             ))}
           </div>

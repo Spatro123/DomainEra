@@ -23,9 +23,9 @@ const Footer = () => {
         <div className={classes.section}>
           <ul className={classes.links}>
           <h3>Important Links </h3>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/privacypolicy">Privacy Policy</a></li>
             <li><a href="/disclaimer">Disclaimer</a></li>
-            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
           </ul>
         </div>
 

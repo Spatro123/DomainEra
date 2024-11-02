@@ -2,8 +2,9 @@
   font-family: 'Arial', sans-serif;
   padding: 40px;
   /* background-color: #f7f7f7; */
-  max-width: 1200px; /* Set a maximum width to center the content */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 1200px;
+  margin: 0 auto; 
+    margin-top: 100px;
 }
 
 /* Header */

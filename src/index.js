@@ -23,6 +23,9 @@ import Startup from './Startup'; // Importing the Startup component
 import Startuppage from './Stratuppage2';
 import Security from './Security';
 import Securitypage2 from './securitypage2';
+import Contactus from './Contactus';
+import PrivacyPolicy from './PrivacyPolicy';
+import Disclaimer from './Disclaimer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -48,6 +51,9 @@ root.render(
         <Route path="/startuppage" element={<Startuppage />} />
         <Route path="/security" element={<Security />} />
         <Route path="/securitypage2" element={<Securitypage2 />} />
+        <Route path="/contactus" element={<Contactus />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
       </Routes>
       <Footer />
     </Router>

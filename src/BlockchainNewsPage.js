@@ -15,7 +15,11 @@ const EditorPickPage = () => {
     title: 'Lenovo’s smarter devices stoke professional passions',
     author: 'Foulcher Nathanil',
     date: 'May 20, 2021',
-    readTime: '2 min read'
+    readTime: '2 min read',
+    links: [
+      "https://www.blockchain.com/blog/posts/its-time-to-ape-in-on-memecoins-with-blockchaincom",
+      "https://blogs.oracle.com/blockchain/post/revolutionizing-manufacturing-with-blockchains"
+    ]
   };
 
   return (
@@ -29,7 +33,10 @@ const EditorPickPage = () => {
         <div className={classes.content}>
           <div className={classes.card}>
             <span className={classes.tag}>Industrial</span>
-            <h2>Lenovo’s smarter devices stoke professional passions</h2>
+            {/* Link the title to the first article URL */}
+            <a href={article.links[0]} target="_blank" rel="noopener noreferrer">
+              <h2>{article.title}</h2>
+            </a>
             <div className={classes.author}>
               <img
                 src={author}
@@ -37,8 +44,8 @@ const EditorPickPage = () => {
                 className={classes.authorImage}
               />
               <div className={classes.authorDetails}>
-                <p>Foulcher Nathanil</p>
-                <p>May 20, 2021</p>
+                <p>{article.author}</p>
+                <p>{article.date}</p>
               </div>
             </div>
             <div className={classes.interactions}>
@@ -48,14 +55,16 @@ const EditorPickPage = () => {
             </div>
           </div>
           <div className={classes.imageContainer}>
-            <img
-              src={photo}
-              alt="Books on a beach"
-              className={classes.mainImage}
-            />
+            {/* Link the image to the second article URL */}
+            <a href={article.links[1]} target="_blank" rel="noopener noreferrer">
+              <img
+                src={photo}
+                alt="Books on a beach"
+                className={classes.mainImage}
+              />
+            </a>
           </div>
         </div>
-
       </div>
 
       <Authors />
